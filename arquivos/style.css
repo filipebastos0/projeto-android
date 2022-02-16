@@ -92,7 +92,7 @@ article > h2 {
 
 main {
     min-width: 20em;
-    max-width: 60em;
+    max-width: 50em;
     margin: auto;
     padding: 10px;
     background-color: white;
@@ -156,8 +156,8 @@ aside {
 
 aside > ul {
     list-style-position: inside;
-    margin: 5px;
     columns: 2;
+    line-height: 1.2em;
 }
 
 aside > h3 {
