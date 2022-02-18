@@ -9,7 +9,7 @@
 }
 
 :root {
-    --cor0: #c5ebd6;
+    --cor0: #c5ebd63d;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
     --cor3: #2fa866;
@@ -90,7 +90,7 @@ article > h2 {
     font-size: 1.5em;
 }
 
-main {
+.main-index {
     min-width: 20em;
     max-width: 50em;
     margin: auto;
@@ -101,22 +101,22 @@ main {
 
 }
 
-main img {
+.main-index img {
     width: 100%;
 }
 
-main p {
+.main-index p {
     margin: .8em 0px;
     text-align: justify;
     text-indent: 1.2em;
     line-height: 1.5em;
 }
 
-main a {
+.main-index a {
     color: var(--cor5);
 }
 
-main a:hover {
+.main-index a:hover {
     text-decoration: underline;    
 }
 
@@ -184,5 +184,27 @@ footer a {
 footer a:hover {
     color: var(--cor0);
     transition: .1s;
+}
+
+.main-contato {
+    background-color: var(--cor0);
+    margin: auto;
+    padding: auto;
+}
+
+.titulo-contato {
+    font-family: var(--fonte-padrao);
+    color: var(--cor5);
+    margin-left: 10%;
+}
+
+.titulo-label {
+    font-weight: bold;
+    font-family: var(--fonte-padrao);
+}
+
+.subtitulo{
+    font-weight: bold;
+    margin-left: 10%;
 }
 
