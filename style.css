@@ -9,7 +9,7 @@
 }
 
 :root {
-    --cor0: #c5ebd63d;
+    --cor0: #e3f5eb;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
     --cor3: #2fa866;
@@ -186,15 +186,36 @@ footer a:hover {
     transition: .1s;
 }
 
+fieldset {
+    border: 0;
+}
+
+fieldset.grupo .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.check {
+    display: inline-block;
+}
+
 .main-contato {
     background-color: var(--cor0);
-    margin: auto;
-    padding: auto;
+    font-family: var(--fonte-padrao);
+    font-size: 1.1rem;
+    color: var(--cor5);
+    margin-left: 36%;
+    margin-top: 2%;
+    justify-content: center;
 }
 
 .titulo-contato {
     font-family: var(--fonte-padrao);
     color: var(--cor5);
+    margin-left: 10%;
+}
+.subtitulo {
+    font-weight: bold;
     margin-left: 10%;
 }
 
@@ -203,8 +224,49 @@ footer a:hover {
     font-family: var(--fonte-padrao);
 }
 
-.subtitulo{
-    font-weight: bold;
-    margin-left: 10%;
+input, select, textarea, button {
+    border-radius: 5px;
 }
 
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label{
+    margin-bottom: .2em;
+    display: block;
+}
+
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: .2em;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    display: block;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+button {
+    font-size: 1.2rem;
+    background-color: var(--cor1);
+    border: 0;
+    margin-bottom: 1em;
+    padding: .2em .6em;
+    color: var(--cor5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+}
+
+button:hover {
+    background-color: #b8f3d2;
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.1);
+    text-shadow: none;
+}
